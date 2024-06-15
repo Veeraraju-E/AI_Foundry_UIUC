@@ -53,7 +53,7 @@ transform = A.Compose(
 train_dataset = ImageFolder(root_dir=os.path.join(os.getcwd(), "train"), transform=transform)
 train_dataLoader = DataLoader(dataset=train_dataset, batch_size=BATCH_SIZE, shuffle=True)
 
-test_dataset = ImageFolder(root_dir=os.path.join(os.getcwd(), "train"), transform=transform)
+test_dataset = ImageFolder(root_dir=os.path.join(os.getcwd(), "test"), transform=transform)
 test_dataLoader = DataLoader(dataset=test_dataset, batch_size=BATCH_SIZE, shuffle=True)
 
 # 4. Load the model, from model.py
