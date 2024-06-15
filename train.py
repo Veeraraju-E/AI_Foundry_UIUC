@@ -92,7 +92,6 @@ def test(loader, model):
     with torch.no_grad():
         for (data, target) in tqdm(loader):
             data, target = data.to(device=DEVICE), target.to(device=DEVICE)
-            data = data.reshape(data.shape[0], -1)  # [64,784]
             y_predictions = model(data)
             _, y_pred = y_predictions.max(1)  # along axis=1
             num_correct += (y_pred == target).sum()
