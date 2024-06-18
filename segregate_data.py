@@ -1,3 +1,5 @@
+# Optional python script to segregate your data into 4 different folders (for 4 different classes), based on the meta-data extracted from the dataset. The file for which is here - https://github.com/Veeraraju-E/AI_Foundry_UIUC/edit/main/dataset/get_metadata.py
+# Note that this is being done to sub-sample the images and perform a 4-way classification only
 import os
 import pandas as pd
 import shutil
